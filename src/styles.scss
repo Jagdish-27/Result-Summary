@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  // @ mixins.. 
+  
+  @mixin col-direction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  // variables
+  $work-space:1440px;
+  
+  $color-purple: blueviolet;
+  $color-white:#fff;
+  
+  
+  // ## Colors
+  
+  // ### Primary
+  
+  $color-light-red:hsl(0, 100%, 67%);
+  $color-orangey-yellow:hsl(39, 100%, 56%);
+  $color-Green-teal: hsl(166, 100%, 37%);
+  $color-Cobalt-blue: hsl(234, 85%, 45%);
+  
+  
+  // ## Gradients
+  
+  $color-Light-slate-blue : hsl(252, 100%, 67%); // (background)
+  $color-Light-royal-blue : hsl(241, 81%, 54%); // (background)
+  
+  $color-Violet : hsla(256, 72%, 46%, 1); // (circle):
+  $color-Persian-blue :  hsla(241, 72%, 46%, 0); // (circle):
+  
+  // ### Neutral
+  
+  $color-White: hsl(0, 0%, 100%);
+  $color-Pale-blue: hsl(221, 100%, 96%);
+  $color-Light-lavender: hsl(241, 100%, 89%);
+  $color-Dark-gray-blue: hsl(224, 30%, 27%);
+  
+  
+  
+  // body{
+  //   box-sizing: inherit;
+  //   font-size: 1.6rem;
+  // }
+  
+  button,
+  select,
+  input{
+    font-size: 1.6rem;
+    color: $color-white;
+  }
+  
+  button{
+    cursor: pointer;
+  }
+  
+  .workspace-setter{
+    width: 100%;
+    max-width: $work-space;
+    margin: 0 auto;
+  
+    @media(max-width: $work-space){
+      padding: 0 20px;
+    }
+  }
+  
+  .btn-clear{
+    width: unset;
+    height: unset;
+    border: unset;
+    outline: unset;
+    background-color: unset;
+    -webkit-top-height-color:transparent !important;
+  }
+  
+  .overlay{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+  
+  .swal2-container{
+    .swal2-popup{
+      font-size: 1.6rem !important;
+    }
+  }
+  
+  
+  // html, body{
+  //   height: 100%;
+  // }
+  
+  // body{
+  //   margin: 0;
+  //   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  // }

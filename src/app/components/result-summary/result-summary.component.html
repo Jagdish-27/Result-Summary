@@ -1,0 +1,38 @@
+<div class="result_summary">
+    <div class="result">
+        <h2>Your Result</h2>
+
+        <div class="circle">
+            <span class="num">76</span> <span class="total">of 100</span>
+        </div>
+
+        <div class="score">
+            <h2>Great</h2>
+            <div class="text-box">
+            <p>You scored higher than 65% of</p>
+            <p>the people who have taken</p>
+            <p>these tests.</p>
+        </div>
+        </div>
+    </div>
+    <div class="summary">
+        <h2>Summary</h2>
+        <div class="items">
+            <div class="tests" *ngFor="let item of resultItems" [ngClass]="getBackGroundClass(item.text)">
+                <div class="left">
+                    <img [src]="item.img">
+                <span class="text" [ngClass]="getTextClass(item.text)">
+                   {{item.text}}
+                </span>
+                </div>
+                <div class="right">
+                    <span style="font-weight: 600;">{{item.marks}}</span> / {{item.total}}
+                </div>
+            </div>
+        </div>
+
+        <button class="btn">
+            Continue
+        </button>
+    </div>
+</div>
