@@ -7,12 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ResultSummaryComponent {
 
-
   // variables created by mehh
 
   resultItems = [
     {
-      img: '../../../assets/images/icon-reaction.svg',
+      img: '/docs/assets/images/icon-memory.svg',
       text: 'Reaction',
       marks: 80,
       total: 100,
