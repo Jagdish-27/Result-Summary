@@ -1,7 +1,7 @@
 @import "../../../styles.scss";
 
 .result_summary {
-  width: 50%;
+  width: 45%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,7 +15,7 @@
   }
 
   .result {
-    width: 50%;
+    width: 45%;
     padding: 2rem 0;
     background: $color-Light-slate-blue;
     color: #fff;
