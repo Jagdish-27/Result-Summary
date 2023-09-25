@@ -11,7 +11,7 @@ export class ResultSummaryComponent {
 
   resultItems = [
     {
-      img: '../../../docs/assets/images/icon-memory.svg',
+      img: '../../../assets/images/icon-reaction.svg',
       text: 'Reaction',
       marks: 80,
       total: 100,
